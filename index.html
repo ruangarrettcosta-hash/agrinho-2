@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoMetria - O Jogo do Equilíbrio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">🌱 EcoMetria</div>
+        <div class="tag">Consumo Consciente & Economia Circular</div>
+    </nav>
+
+    <main class="main-wrapper">
+        <header class="hero-section">
+            <div class="hero-content">
+                <h1>A Linha Tênue da Sustentabilidade</h1>
+                <p>O que acontece quando a velocidade com que compramos supera a capacidade do planeta de regenerar recursos? Explore a física oculta por trás da nossa economia de mercado.</p>
+            </div>
+            <div class="hero-media">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Equilibrio_ecologico.jpg" alt="Ecossistema Integrado" class="featured-image">
+            </div>
+        </header>
+
+        <section class="lab-container">
+            <h2>Laboratório de Impacto em Tempo Real</h2>
+            <p class="subtitle">Ajuste os controles abaixo para tentar sincronizar a produção fabril com o consumo urbano.</p>
+
+            <div class="simulator-grid">
+                <div class="control-panel">
+                    <div class="control-group">
+                        <label for="range-producao">🏭 Ritmo de Produção Industrial</label>
+                        <input type="range" id="range-producao" min="1" max="100" value="50" oninput="atualizarLaboratorio()">
+                        <span id="val-producao" class="badge">50%</span>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="range-consumo">🛍️ Demanda de Consumo Humano</label>
+                        <input type="range" id="range-consumo" min="1" max="100" value="50" oninput="atualizarLaboratorio()">
+                        <span id="val-consumo" class="badge">50%</span>
+                    </div>
+                </div>
+
+                <div id="status-card" class="status-card em-equilibrio">
+                    <div class="status-icon" id="status-icon">⚖️</div>
+                    <h3 id="status-label">Balança Estável</h3>
+                    <p id="status-text">A produção atende às necessidades humanas sem sobrecarregar severamente as matérias-primas do planeta. Continue assim.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="video-section">
+            <h3>Análise Macroeconômica</h3>
+            <div class="video-frame">
+                <iframe src="https://www.youtube.com/embed/GsurTa3Bd20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-minimal">
+        <p>Desenvolvido para reflexão crítica sobre a cadeia produtiva e o consumo consciente em 2026.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
