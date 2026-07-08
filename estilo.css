@@ -1,0 +1,221 @@
+/* Design Minimalista Dark/Cyber-Eco */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', system-ui, sans-serif;
+}
+
+body {
+    background-color: #0b0f19;
+    color: #e2e8f0;
+    padding-top: 60px;
+}
+
+/* Menu Superior */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #111827;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    border-bottom: 1px solid #1f2937;
+    z-index: 1000;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #10b981;
+}
+
+.tag {
+    font-size: 0.85rem;
+    color: #9ca3af;
+}
+
+/* Área de Conteúdo Principal */
+.main-wrapper {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Hero Section */
+.hero-section {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.hero-content h1 {
+    font-size: 2.8rem;
+    color: #ffffff;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    color: #9ca3af;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.featured-image {
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    border: 1px solid #374151;
+}
+
+/* Simulador Avançado */
+.lab-container {
+    background: #111827;
+    border: 1px solid #1f2937;
+    padding: 40px;
+    border-radius: 24px;
+    margin-bottom: 60px;
+}
+
+.lab-container h2 {
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #6b7280;
+    margin-bottom: 40px;
+}
+
+.simulator-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.control-group {
+    margin-bottom: 30px;
+}
+
+.control-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #d1d5db;
+}
+
+/* Inputs de Range Customizados */
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    background: #1f2937;
+    border-radius: 4px;
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #10b981;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+}
+
+.badge {
+    display: inline-block;
+    margin-top: 8px;
+    background: #1f2937;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    color: #34d399;
+}
+
+/* Cards Dinâmicos do Sistema */
+.status-card {
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.status-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+/* Cores de Estado Dinâmico do JS */
+.em-equilibrio {
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid #10b981;
+}
+.em-equilibrio h3 { color: #10b981; }
+
+.escassez {
+    background: rgba(245, 158, 11, 0.1);
+    border: 1px solid #f59e0b;
+}
+.escassez h3 { color: #f59e0b; }
+
+.colapso {
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid #ef4444;
+}
+.colapso h3 { color: #ef4444; }
+
+/* Seção do Vídeo */
+.video-section {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.video-section h3 {
+    margin-bottom: 20px;
+}
+
+.video-frame {
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+}
+
+.video-frame iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    display: block;
+}
+
+/* Rodapé */
+.footer-minimal {
+    border-top: 1px solid #1f2937;
+    padding: 30px;
+    text-align: center;
+    color: #4b5563;
+    font-size: 0.9rem;
+}
+
+/* Ajustes Mobile */
+@media (max-width: 768px) {
+    .hero-section, .simulator-grid {
+        grid-template-columns: 1fr;
+    }
+    .navbar {
+        padding: 0 20px;
+    }
+}
